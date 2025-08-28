@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact From</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/index.js"></script>
+  </head>
+  <body>
+    <h2 class="contactForm-title">Contact form</h2>
+    <p>Please fill on you information and we'll sending your order</p>
+    <form action="">
+      <label
+        >Your name
+        <input
+          type="text"
+          name="first-name"
+          placeholder="first name"
+          autofocus
+        />
+        <input type="text" name="last-name" placeholder="last name" />
+      </label>
+      <label
+        >Your email
+        <input type="email" name="email" placeholder="your_mail@mail.com" />
+      </label>
+      <label
+        >Phone *
+        <input type="number" name="phone-code" />
+        <input type="number" name="phone-number" />
+        <input type="number" name="phone-numerEnd" />
+      </label>
+      <label
+        >Message subject *
+        <select class="msubject" name="message-subject">
+          <option value="">--Please choose an option--</option>
+          <option value="Other">Other</option>
+          <option value="Order">Order</option>
+          <option value="Complain">Complain</option>
+        </select>
+      </label>
+      <label
+        >Message *
+        <textarea name="message" rows="5" cols="33"></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
