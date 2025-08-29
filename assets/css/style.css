@@ -200,3 +200,12 @@ button:hover {
     font-size: 1.5rem;
   }
 }
+
+.valid {
+    background-color: green;
+    color: beige;
+}
+
+.invalid {
+    background-color: palevioletred;
+}

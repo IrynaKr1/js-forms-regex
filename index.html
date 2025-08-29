@@ -1,63 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script defer src="assets/js/index.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="contact-form">
-        <h2 class="contactForm-title">Contact form</h2>
-        <p>Please fill in your information and we'll be sending your order.</p>
-        
-        <form action="">
-            <label>
-                <span>Your name</span>
-                <div class="name-inputs">
-                    <input type="text" name="first-name" placeholder="first name" autofocus />
-                    <input type="text" name="last-name" placeholder="last name" />
-                </div>
-            </label>
-            
-            <label>
-                <span>Your email</span>
-                <div class="input-container">
-                    <input type="email" name="email" placeholder="your_mail@mail.com" />
-                </div>
-            </label>
-            
-            <label>
-                <span>Phone *</span>
-                <div class="phone-inputs">
-                    <input type="text" name="phone-code" placeholder="+00" />
-                    <input type="text" name="phone-number" placeholder="123" />
-                    <input type="text" name="phone-end" placeholder="0000" />
-                </div>
-            </label>
-            
-            <label>
-                <span>Message subject *</span>
-                <div class="input-container">
-                    <select name="message-subject">
-                        <option value="Other" selected>Other</option>
-                        <option value="Order">Order</option>
-                        <option value="Complain">Complain</option>
-                    </select>
-                </div>
-            </label>
-            
-            <label>
-                <span>Message *</span>
-                <div class="input-container">
-                    <textarea name="message" rows="5" placeholder=""></textarea>
-                </div>
-            </label>
-            
-            <button type="submit">Submit form</button>
-        </form>
+      <h2 class="contactForm-title">Contact form</h2>
+      <p>Please fill in your information and we'll be sending your order.</p>
+
+      <form action="">
+        <label>
+          <span>Your name</span>
+          <div class="name-inputs">
+            <input
+              type="text"
+              name="first-name"
+              placeholder="first name"
+              minlength="2"
+              maxlength="25"
+              autofocus
+            />
+            <input
+              type="text"
+              name="last-name"
+              placeholder="last name"
+              minlength="2"
+              maxlength="25"
+            />
+          </div>
+        </label>
+
+        <label>
+          <span>Your email</span>
+          <div class="input-container">
+            <input
+              type="email"
+              name="email"
+              placeholder="your_mail@mail.com"
+              maxlength="50"
+            />
+          </div>
+        </label>
+
+        <label>
+          <span>Phone *</span>
+          <div class="phone-inputs">
+            <input
+              type="text"
+              name="phone-code"
+              placeholder="+00"
+              minlength="2"
+              maxlength="4"
+              required
+            />
+            <input
+              type="text"
+              name="phone-number"
+              placeholder="123"
+              minlength="2"
+              maxlength="4"
+              required
+            />
+            <input
+              type="text"
+              name="phone-end"
+              placeholder="0000"
+              minlength="4"
+              maxlength="7"
+              required
+            />
+          </div>
+        </label>
+
+        <label>
+          <span>Message subject *</span>
+          <div class="input-container">
+            <select name="message-subject" required>
+              <option value="Other" selected>Other</option>
+              <option value="Order">Order</option>
+              <option value="Complain">Complain</option>
+            </select>
+          </div>
+        </label>
+
+        <label>
+          <span>Message *</span>
+          <div class="input-container">
+            <textarea
+              name="message"
+              rows="5"
+              placeholder=""
+              minlength="10"
+              maxlength="500"
+              required
+            ></textarea>
+          </div>
+        </label>
+
+        <button type="submit">Submit form</button>
+      </form>
     </div>
-</body>
+  </body>
 </html>
