@@ -105,6 +105,7 @@ label {
 input,
 select,
 textarea {
+  width: 100%;
   padding: 0.75rem 1rem;
   border: none;
   background: white;
@@ -137,7 +138,7 @@ textarea {
 
 button {
   margin-top: 1rem;
-  margin-left: 166px; 
+  margin-left: 166px;
   padding: 1rem 2rem;
   background: transparent;
   border: 2px solid white;
@@ -157,7 +158,7 @@ button:hover {
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-.contact-form {
+  .contact-form {
     padding: 1.5rem 1rem;
   }
 
@@ -195,10 +196,10 @@ button:hover {
 }
 
 .valid {
-    background-color: green;
-    color: beige;
+  background-color: green;
+  color: beige;
 }
 
 .invalid {
-    background-color: palevioletred;
+  background-color: palevioletred;
 }
