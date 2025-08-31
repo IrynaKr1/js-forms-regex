@@ -11,11 +11,11 @@
   <body>
     <div class="contact-form">
       <h2 class="contactForm-title">Contact form</h2>
-      <p>Please fill in your information and we'll be sending your order.</p>
+      <p class="informParagraph">Please fill in your information and we'll be sending your order.</p>
 
       <form action="">
         <label>
-          <span>Your name</span>
+          <span class="label-text">Your name</span>
           <div class="name-inputs">
             <input
               type="text"
@@ -36,7 +36,7 @@
         </label>
 
         <label>
-          <span>Your email</span>
+          <span class="label-text">Your email</span>
           <div class="input-container">
             <input
               type="email"
@@ -48,11 +48,12 @@
         </label>
 
         <label>
-          <span>Phone *</span>
+          <span class="label-text">Phone *</span>
           <div class="phone-inputs">
             <input
               type="text"
               name="phone-code"
+              class="phone-code"
               placeholder="+00"
               minlength="2"
               maxlength="4"
@@ -61,6 +62,7 @@
             <input
               type="text"
               name="phone-number"
+              class="phone-number"
               placeholder="123"
               minlength="2"
               maxlength="4"
@@ -69,6 +71,7 @@
             <input
               type="text"
               name="phone-end"
+              class="phone-end"
               placeholder="0000"
               minlength="4"
               maxlength="7"
@@ -78,7 +81,7 @@
         </label>
 
         <label>
-          <span>Message subject *</span>
+          <span class="label-text">Message subject *</span>
           <div class="input-container">
             <select name="message-subject" required>
               <option value="Other" selected>Other</option>
@@ -89,7 +92,7 @@
         </label>
 
         <label>
-          <span>Message *</span>
+          <span class="label-text">Message *</span>
           <div class="input-container">
             <textarea
               name="message"

@@ -40,7 +40,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.contact-form > p {
+.informParagraph {
   font-weight: normal;
   padding-bottom: 2rem;
   margin: 0;
@@ -63,7 +63,7 @@ label {
   font-weight: normal;
 }
 
-label > span {
+.label-text {
   min-width: 150px;
   flex-shrink: 0;
 }
@@ -89,15 +89,15 @@ label > span {
   gap: 0.5rem;
 }
 
-.phone-inputs input:first-child {
+.phone-code {
   width: 80px;
 }
 
-.phone-inputs input:nth-child(2) {
+.phone-number {
   width: 100px;
 }
 
-.phone-inputs input:last-child {
+.phone-end {
   flex: 1;
 }
 
@@ -157,47 +157,40 @@ button:hover {
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-  label {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  label > span {
-    min-width: auto;
-  }
-
-  .name-inputs,
-  .phone-inputs,
-  .input-container {
-    width: 100%;
-  }
-
-  .name-inputs {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .phone-inputs {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .phone-inputs input {
-    width: 100% !important;
-    flex: none !important;
-  }
-
-  button {
-    margin-left: 0;
-  }
-
-  .contact-form {
+.contact-form {
     padding: 1.5rem 1rem;
   }
 
   .contactForm-title {
     font-size: 1.5rem;
+  }
+
+  .contact-form label {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .contact-form .label-text {
+    min-width: auto;
+  }
+
+  .contact-form .name-inputs,
+  .contact-form .phone-inputs {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-form .phone-code,
+  .contact-form .phone-number,
+  .contact-form .phone-end {
+    width: 100%;
+    flex: none;
+  }
+
+  .contact-form button {
+    margin-left: 0;
   }
 }
 
